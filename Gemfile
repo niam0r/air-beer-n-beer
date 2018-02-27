@@ -16,8 +16,8 @@ gem 'simple_form'
 gem 'uglifier'
 gem 'webpacker'
 gem 'devise'
-gem "pundit"
-gem "geocoder"
+gem 'pundit'
+gem 'geocoder'
 
 
 group :development do
