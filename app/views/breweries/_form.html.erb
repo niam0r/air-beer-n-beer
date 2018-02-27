@@ -1,0 +1,15 @@
+<%= simple_form_for @brewery do |f| %>
+
+  <div class="row">
+    <div class="col-xs-6">
+      <%= f.input :name, placeholder: 'Brewery name' %>
+    </div>
+    <div class="col-xs-6">
+      <%= f.input :address, placeholder: 'Brewery address' %>
+    </div>
+  </div>
+
+  <div class="text-center">
+    <%= f.button :submit, class: 'full-width' %>
+  </div>
+<% end %>
