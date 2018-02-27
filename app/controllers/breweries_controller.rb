@@ -27,6 +27,8 @@ class BreweriesController < ApplicationController
   end
 
   def show
+    @markers = [{lat: @brewery.latitude, lng: @brewery.longitude}]
+
   end
 
   def edit
