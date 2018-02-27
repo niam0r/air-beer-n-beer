@@ -1,11 +1,11 @@
 class BreweriesController < ApplicationController
   def index
-    @flats = Flat.where.not(latitude: nil, longitude: nil)
+    @breweries = Brewery.where.not(latitude: nil, longitude: nil)
 
-    @markers = @flats.map do |flat|
+    @markers = @breweries.map do |brewery|
       {
-        lat: flat.latitude,
-        lng: flat.longitude#,
+        lat: brewery.latitude,
+        lng: brewery.longitude#,
         # infoWindow: { content: render_to_string(partial: "/flats/map_box", locals: { flat: flat }) }
       }
     end
