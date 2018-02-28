@@ -53,6 +53,6 @@ class BreweriesController < ApplicationController
   end
 
   def brewery_params
-    params.require(:brewery).permit(:name, :address)
+    params.require(:brewery).permit(:name, :address, :photo)
   end
 end
